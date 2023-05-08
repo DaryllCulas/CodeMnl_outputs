@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity</title>
+</head>
+<body>
+  <h1>News Article #2</h1>
+    <h2>Cybersecurity</h2>
+    <img src="./Screenshot from 2023-05-08 21-53-28.png" alt="Cybersecurity-news">
+      <h3>A new ransomware operation called Cactus has been exploiting vulnerabilities in VPN appliances for initial access to networks of “large commercial entities.”</h3>
+        <p>The Cactus ransomware operation has been active since at least March and is looking for big payouts from its victims.</p>
+        <p>While the new threat actor adopted the usual tactics seen in ransomware attacks - file encryption and data theft - it added its own touch to avoid detection.</p>
+        <strong><p>Encrypted configuration twist</p></strong>
+        <br>
+        <p>Researchers at Kroll corporate investigation and risk consulting firm believe that Cactus obtains initial access into the victim network by exploiting known vulnerabilities in Fortinet VPN appliances.</p>
+        <p>The assessment is based on the observation that in all incidents investigated the hacker pivoted inside from a VPN server with a VPN service account.</p>
+        <p>What sets Cactus apart from other operations is the use of encryption to protect the ransomware binary. The actor uses a batch script to obtain the encryptor binary using 7-Zip.</p>
+        <p>The original ZIP archive is removed and the binary is deployed with a specific flag that allows it to execute. The entire process is unusual and the researchers that this is to prevent the detection of the ransomware encryptor.</p>
+        <p>In a technical report, Kroll investigators explain that there are three main modes of execution, each one selected with the use of a specific command line switch: setup (-s), read configuration (-r), and encryption (-i).</p>
+        <p>The -s and -r arguments allow the threat actors to setup persistence and store data in a C:\ProgramData\ntuser.dat file that is later read by the encryptor when running with the -r command line argument.</p>
+        <p>For the file encryption to be possible, though, a unique AES key known only to the attackers must be provided using the -i command line argument.</p>
+        This key is necessary to decrypt the ransomware's configuration file and the public RSA key needed to encrypt files. It is available as a HEX string hardcoded in the encryptor binary.
+</body>
+</html>
