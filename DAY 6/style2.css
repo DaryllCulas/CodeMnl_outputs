@@ -43,3 +43,31 @@ iframe {
 #HDRSpan {
   color: green;
 }
+th {
+  color: red;
+  font-size: 40pt;
+  padding: 80px 80px;
+  
+}
+.casts {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
+}
+#circle {
+  height: 150px;
+  width: 150px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+}
+tr, td {
+  padding-bottom: 40px;
+}
+b {
+  color: yellow;
+}
+i {
+  color: violet;
+}
